@@ -24,7 +24,6 @@
         'views/assets.xml',
         'views/sidebar.xml',
     ],
-    'live_test_url': 'https://youtu.be/qTSup3fqwlU',
     'qweb': [
         "static/src/xml/menu.xml",
     ],

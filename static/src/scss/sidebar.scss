@@ -59,7 +59,7 @@ $odoo-sidebar-width: 180px;
       background-position: left bottom;
     }
 
-    > li > a {
+    > li > a, .tab {
       display: block;
       position: relative;
       margin: 0;
@@ -88,10 +88,35 @@ $odoo-sidebar-width: 180px;
 .toggle-sidebar {
   margin-left: 0px - $odoo-sidebar-width;
 }
+
 .img-fluid {
-  max-width: 200px;
-  min-width: 200px;
-  max-height: 100px;
-  min-height: 100px;
+  max-width: 60px;
+  min-width: 60px;
+  max-height: 60px;
+  min-height: 60px;
+  border-radius: 5px;
+}
+
+div.settings_tab{
+  background: $brand-primary !important;
+}
+
+.tab {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0px;
+  background: linear-gradient(to right, $brand-secondary 50%, $brand-primary 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.2s ease-out;
+}
+
+.tab:hover {
+  background-position: left bottom;
+}
+
+header {
+  background: $brand-primary;
 }
 

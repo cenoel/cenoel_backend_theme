@@ -10,8 +10,45 @@ odoo.define('cenoel_backend_theme.Menu', function (require) {
         },
         start: function () {
             var self = this;
+
             $('.toggle_menu_item').click(function () {
-                $("#app-sidebar").toggle(150);
+                if ($("#app-sidebar").css("display") == 'block') {
+                    $("#app-sidebar").css({"display": "none"});
+                } else {
+                    $("#app-sidebar").css({"display": "block"});
+                }
+            });
+
+            $(document).click(function () {
+                if ($("#app-sidebar").css("display") == 'block') {
+                    $("nav").css({"margin-left": "250px"});
+                } else {
+                    $("nav").css({"margin-left": "0px"});
+                }
+            });
+
+            $("nav").click(function () {
+                if ($("#app-sidebar").css("display") == 'block') {
+                    $("nav").css({"margin-left": "250px"});
+                } else {
+                    $("nav").css({"margin-left": "0px"});
+                }
+            });
+            $(".o_menu_apps").click(function () {
+                $("#app-sidebar").css({"display": "none"});
+                $("header").css({"margin-left": "0px"});
+            });
+            $(".o_menu_brand").click(function () {
+                $("#app-sidebar").css({"display": "none"});
+                $("header").css({"margin-left": "0px"});
+            });
+            $(".o_menu_sections").click(function () {
+                $("#app-sidebar").css({"display": "none"});
+                $("header").css({"margin-left": "0px"});
+            });
+            $(".o_menu_systray").click(function () {
+                $("#app-sidebar").css({"display": "none"});
+                $("header").css({"margin-left": "0px"});
             });
 
             return this._super.apply(this, arguments);

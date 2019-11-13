@@ -3,7 +3,7 @@
 
 <header t-name="Menu">
   <nav class="o_main_navbar">
-        <ul class="o_menu_apps"/>
+    <ul class="o_menu_apps"/>
     <a class="toggle_menu_item" id="toggle_menu_item" href="javascript:void(0)">
             <i class="fa fa-th fa-lg"/>
         </a>

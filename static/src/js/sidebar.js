@@ -31,15 +31,15 @@ odoo.define('cenoel_backend_theme.Sidebar', function (require) {
         });
     });
     $(document).ready(function () {
-        $("#app-sidebar").hide();
+        $("#app-sidebar").css({"display": "none"});
         $("a").click(function () {
-            $("#app-sidebar").hide(150);
+             $("#app-sidebar").css({"display": "none"});
         });
         $("li .nav-item").click(function () {
-            $("#app-sidebar").hide(150);
+             $("#app-sidebar").css({"display": "none"});
         });
         $('body div').click(function () {
-            $("#app-sidebar").hide(150);
+             $("#app-sidebar").css({"display": "none"});
         });
     });
 });

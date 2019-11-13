@@ -1,4 +1,4 @@
-/* Copyright 2016, 2018 Openworx.
+/* Copyright 2016, 2018 Cenoel.
  * License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). */
 
 // Check if debug mode is active and then add debug into URL when clicking on the App sidebar
@@ -33,13 +33,13 @@ odoo.define('cenoel_backend_theme.Sidebar', function (require) {
     $(document).ready(function () {
         $("#app-sidebar").css({"display": "none"});
         $("a").click(function () {
-             $("#app-sidebar").css({"display": "none"});
+            $("#app-sidebar").css({"display": "none"});
         });
         $("li .nav-item").click(function () {
-             $("#app-sidebar").css({"display": "none"});
+            $("#app-sidebar").css({"display": "none"});
         });
         $('body div').click(function () {
-             $("#app-sidebar").css({"display": "none"});
+            $("#app-sidebar").css({"display": "none"});
         });
     });
 });

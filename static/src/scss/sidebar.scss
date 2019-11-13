@@ -1,4 +1,4 @@
-/* Copyright 2016, 2018 Openworx.
+/* Copyright 2016, 2018 Cenoel.
  * License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). */
 
 /* App Sidebar Panel */
@@ -97,7 +97,7 @@ $odoo-sidebar-width: 180px;
   border-radius: 5px;
 }
 
-div.settings_tab{
+div.settings_tab {
   background: $brand-primary !important;
 }
 
@@ -118,5 +118,28 @@ div.settings_tab{
 
 header {
   background: $brand-primary;
+}
+
+@keyframes page-load {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.page-loading::before {
+  background-color: #ffffff;
+  content: " ";
+  display: block;
+  position: fixed;
+  z-index: 10;
+  height: 3px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  animation: page-load infinite ease-out 2s;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
 }
 

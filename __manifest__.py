@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2016, 2018 Openworx
+# Copyright 2016, 2018 Cenoel
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
 
 {
@@ -15,7 +15,6 @@
         'images/screen.png'
     ],
     "author": "Razafimiandrisoa Noarison Léonce",
-    "license": "LGPL-3",
     "installable": True,
     "depends": [
         'web',
